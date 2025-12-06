@@ -1,0 +1,48 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+    int liczba;
+    cout << "Podaj liczbę: " << endl;
+    cin >> liczba;
+
+    if (liczba >= 0) {
+        cout << "Podana liczba jest na +" << endl;
+    }
+    else {
+        cout << "Podana liczba jest na -" << endl;
+    };
+
+
+    cout << "=====================================" << endl;
+
+
+    int liczbap;
+    cout << "Podaj liczbę by sprawdzic parzystość: " << endl;
+    cin >> liczbap;
+    
+    if (liczbap % 2 == 0) {
+        cout << "Liczba jest parzysta"<<endl;
+    }
+    else {
+        cout << "Liczba nie jest parzysta" << endl;
+    };
+
+
+    cout << "=====================================" << endl;
+
+    int liczba10;
+    cout << "Podaj liczbę sprawdzić czy jest w przedziale 10-50: " << endl;
+    cin >> liczba10;
+    if (liczba10 < 10 && liczba10 > 50) {
+        cout << "Liczba jest w przedziale"; ";
+    }
+    else {
+        cout << "Liczba nie jest w przedziale"; :
+    }
+
+    return 0;
+}
