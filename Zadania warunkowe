@@ -38,10 +38,10 @@ int main()
     cout << "Podaj liczbę sprawdzić czy jest w przedziale 10-50: " << endl;
     cin >> liczba10;
     if (liczba10 < 10 && liczba10 > 50) {
-        cout << "Liczba jest w przedziale"; ";
+        cout << "Liczba jest w przedziale";
     }
     else {
-        cout << "Liczba nie jest w przedziale"; :
+        cout << "Liczba nie jest w przedziale";
     }
 
     return 0;
