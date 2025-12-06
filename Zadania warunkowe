@@ -37,11 +37,76 @@ int main()
     int liczba10;
     cout << "Podaj liczbę sprawdzić czy jest w przedziale 10-50: " << endl;
     cin >> liczba10;
-    if (liczba10 < 10 && liczba10 > 50) {
-        cout << "Liczba jest w przedziale";
+    if (liczba10 >= 10 && liczba10 <= 50) {
+        cout << "Liczba jest w przedziale" << endl;
     }
     else {
-        cout << "Liczba nie jest w przedziale";
+        cout << "Liczba nie jest w przedziale" << endl;
+    }
+
+    cout << "=====================================" << endl;
+
+    int liczbau;
+    cout << "Podaj liczbę by sprawdzić czym jest: " << endl;
+    cin >> liczbau;
+
+    if (liczbau > 0) {
+        cout << "Podana liczba jest na +" << endl;
+        if (liczbau % 2 == 0) {
+            cout << "Liczba jest parzysta" << endl;
+        }
+        else {
+            cout << "Liczba nie jest parzysta" << endl;
+        };
+    }
+    else if (liczbau < 0) {
+        cout << "Podana liczba jest na -" << endl;
+    }
+    else {
+        cout << "Podana liczba to 0" << endl;
+    }
+
+
+    int liczba1, liczba2, liczba3;
+    cout << "Podaj pierwszą liczbę: " << endl;
+    cin >> liczba1;
+    cout << "Podaj drugą liczbę: " << endl;
+    cin >> liczba2;
+    cout << "Podaj trzecią liczbę: " << endl;
+    cin >> liczba3;
+
+    if (liczba1 < liczba2 && liczba1 < liczba3) {
+        cout << liczba1;
+        if (liczba2 < liczba3) {
+            cout << liczba2;
+                cout << liczba3;
+        }
+        else {
+            cout << liczba3;
+            cout << liczba2;
+        }
+    }
+    else if (liczba2 < liczba1 && liczba2 < liczba3) {
+        cout << liczba2;
+        if (liczba1 < liczba3) {
+            cout << liczba1;
+            cout << liczba3;
+        }
+        else {
+            cout << liczba3;
+            cout << liczba1;
+        }
+    }
+    else {
+        cout << liczba3;
+        if (liczba2 < liczba1) {
+            cout << liczba2;
+            cout << liczba1;
+        }
+        else {
+            cout << liczba1;
+            cout << liczba2;
+        }
     }
 
     return 0;
