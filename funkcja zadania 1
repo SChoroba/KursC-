@@ -1,0 +1,51 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+void powitanie(){
+    cout << "Witaj w świecie C++" << endl;
+}
+
+
+
+void wypiszSume(int a, int b) {
+    cout << "Suma: " << a + b << endl;
+}
+
+int fkwadrat(int kwadratf) {
+
+    return kwadratf * kwadratf;
+
+}
+
+int silnia(int n) {
+    int wynik = 1;
+    for (; n > 0; n--) {
+        wynik = wynik * n;
+    }
+    return wynik;
+}
+
+int main()
+{
+
+    powitanie();
+    cout << "=====================================" << endl;
+    wypiszSume(2, 3);
+    wypiszSume(12, 33);
+    wypiszSume(23, 356);
+    cout << "=====================================" << endl;
+    int kwadrat;
+    cout << "Podaj z czego zrobić kwadrat: ";
+    cin >> kwadrat ;
+    cout << fkwadrat(kwadrat)<<endl;
+    cout << "=====================================" << endl;
+    //Funkcja która zrobi silnie
+    cout << "Podaj z czego zrobić silnie: ";
+    int s;
+    cin >> s;
+    cout << silnia(s)<<endl;
+    cout << "=====================================" << endl;
+    return 0;
+}
