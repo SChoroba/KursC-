@@ -1,0 +1,59 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+
+int main()
+{
+    int srednia_predkosc, dystans;
+    cout << "Podaj średnią prędkośc pojazdu na h: " << endl;
+    cin >> srednia_predkosc;
+    cout << "Podaj dystans przejazdu w km: " << endl;
+    cin >> dystans;
+    cout << dystans / srednia_predkosc << "km/h"<<endl;
+
+    int a, b;
+    cout << "Podaj a" << endl;
+    cin >> a;
+    cout << "Podaj b" << endl;
+    cin >> b;
+    cout << "Pole to: " << a * b << endl;
+    double przekotna;
+    przekotna = sqrt(a * a + b * b);
+    cout << przekotna << endl;
+
+
+    cout << "Podaj sekundy" << endl;
+    int sekundy;
+    cin >> sekundy;
+    cout << "Minut: " << sekundy / 60 << endl << "Godzin: " << sekundy / 60 / 60<< endl;
+
+    int godziny, moc;
+    cout << "Podaj ile godzin dziennie urządzenie jest włączone: " << endl;
+    cin >> godziny;
+    cout << "Podaj moc urządzenia" << endl;
+    cin >> moc;
+    if (godziny > 24) {
+        cout << "Niepoprawna ilość godzin";
+    }
+    else {
+        int dziennie = godziny * moc;
+        cout << "codziennie zużywasz : " << dziennie << endl;
+        cout << "miesięcznie zużywasz : " << dziennie * 30 << endl;
+    }
+
+    int zarobki;
+    cout << "Ile zarabiasz?: " << endl;
+    cin >> zarobki;
+    if (zarobki <= 30000) {
+        cout << zarobki * 0.12;
+
+    }
+    else {
+        cout << zarobki
+    }
+
+
+            return 0;
+}
