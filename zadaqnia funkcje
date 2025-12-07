@@ -1,0 +1,75 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+
+
+void roznica(int a, int b) {
+    cout << "roznica: " << a - b << endl;
+}
+
+void iloczyn(int a, int b) {
+    cout << "roznica: " << a * b << endl;
+}
+
+void srednia(int a, int b) {
+    double wynik = (a + b)/2.0;
+    cout << wynik;
+}
+
+void czyparzysta(int a) {
+    if (a % 2 == 0) {
+        cout << a << " jest parzysta" << endl;
+    }
+    else {
+        cout << a << " jest nieparzysta" << endl;
+    }
+}
+
+void poleprostokonta(int a,int b) {
+    cout << a * b;
+}
+
+void polekola(double r) {
+    const double pi = 3.14;
+    cout << "Podaj r: ";
+    double pole = pi * r * r;
+    cout << "Pole to: " << pole << endl;
+}
+
+void obwod(int a, int b) {
+    cout << a + a + b + b;
+}
+
+void maximum(int a, int b) {
+    if (a > b) {
+        cout << a << endl;
+    }
+    else {
+        cout << b << endl;
+    }
+}
+void minimum(int a, int b) {
+    if (a < b) {
+        cout << a << endl;
+    }
+    else {
+        cout << b << endl;
+    }
+}
+
+int main()
+{
+
+    roznica(4, 5);
+    iloczyn(6, 8);
+    srednia(3, 8);
+    czyparzysta(3);
+    poleprostokonta(5,6);
+    polekola(5);
+    obwod(5, 9);
+    maximum(5, 3);
+    minimum(5, 3);
+    return 0;
+}
