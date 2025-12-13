@@ -1,0 +1,64 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int wczytanie[] = {
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+};
+int test[6];
+
+int main()
+{
+    for (int zakres = 0; zakres < 10; zakres++) {
+        cout << "podaj cyfrę: " << endl;
+        int a;
+        cin >> a;
+        wczytanie[zakres] = a;
+    }
+
+
+    for (int zakres = 0; zakres < 10; zakres++) {
+        for (int zzakres = zakres + 1; zzakres < 10; zzakres++) {
+            if (wczytanie[zakres] == wczytanie[zzakres])
+                wczytanie[zakres] = -1;
+        }
+
+    }
+
+    for (int zakres = 0; zakres < 10; zakres++) {
+        if (wczytanie[zakres] != -1) {
+            cout << wczytanie[zakres] << endl;
+        }
+    }
+
+
+
+
+
+
+    for (int zakres = 0; zakres < 7; zakres++) {
+        cout << "podaj cyfrę do testu: " << endl;
+        int a;
+        cin >> a;
+        test[zakres] = a;
+    }
+    for (int zakres = 0, zakres2 = 6; zakres < zakres2; zakres++, zakres2-- ) {
+
+        if (test[zakres] == test[zakres2]) {
+            
+        }
+        else {
+            cout << "Pętla od przodu i od tyłu nie jest taka sama";
+            break;
+        }
+        cout << "Pętla od przodu i od tyłu jest taka sama";
+        break;
+
+    }
+
+
+
+    return 0;
+}
+
